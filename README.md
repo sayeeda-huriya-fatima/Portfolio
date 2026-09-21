@@ -1,1 +1,146 @@
 # Portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Huriya Fatima // Systems & MedTech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fdf8fa;
+      --card-bg: rgba(255, 255, 255, 0.85);
+      --card-border: #f3dbe6;
+      --accent: #d9779f;
+      --accent-soft: #fce7f0;
+      --text: #3c2a33;
+      --muted: #7c6270;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(#f7dce8 1px, transparent 1px),
+        radial-gradient(#f7dce8 1px, var(--bg) 1px);
+      background-size: 32px 32px;
+      background-position: 0 0, 16px 16px;
+      color: var(--text);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.6;
+      padding: 3rem 1.5rem;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    .container { max-width: 650px; width: 100%; }
+    header { text-align: center; margin-bottom: 2.5rem; }
+    .badge { font-size: 1.6rem; margin-bottom: 0.25rem; }
+    h1 {
+      font-family: 'Italiana', serif;
+      font-size: 2.6rem;
+      font-weight: 400;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+    .tagline { font-size: 0.9rem; color: var(--muted); margin-top: 0.2rem; }
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 8px 24px rgba(220, 180, 200, 0.12);
+    }
+    .section-title {
+      font-family: 'Italiana', serif;
+      font-size: 1.4rem;
+      margin: 1.5rem 0 0.8rem;
+      color: var(--text);
+    }
+    .pill {
+      font-size: 0.7rem;
+      background: var(--accent-soft);
+      color: var(--accent);
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid #f7c9dc;
+      font-weight: 500;
+    }
+    .skills-grid { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.8rem; }
+    .tag {
+      background: #ffffff;
+      border: 1px solid var(--card-border);
+      color: var(--muted);
+      font-size: 0.75rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 10px;
+    }
+    .btn-row { display: flex; gap: 0.6rem; margin-top: 1rem; }
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .btn-pink { background: var(--accent); color: #fff; }
+    .btn-outline { background: #fff; border: 1px solid var(--card-border); color: var(--text); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">🌸 🦢 🌷</div>
+      <h1>Huriya Fatima</h1>
+      <p class="tagline">Systems Integration • Database Architecture • Med-Tech</p>
+    </header>
+
+    <div class="card">
+      <p style="font-size: 0.92rem;">
+        First-year CS undergrad focused on database architecture, system integration, and med-tech systems. In hackathons, I bridge the gap between frontend and backend—managing real-time data pipelines, testing endpoints, and writing deterministic architecture docs.
+      </p>
+    </div>
+
+    <div class="section-title">Featured Project ✿</div>
+    <div class="card">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem;">
+        <strong>🛰️ PulseAero (CDSS)</strong>
+        <span class="pill">Active Production</span>
+      </div>
+      <p style="font-size: 0.85rem; color: var(--muted); margin-bottom: 0.8rem;">
+        Autonomous Deep-Space Clinical Decision Support System. Real-time 60 FPS HTML5 Canvas Lead-II vector oscilloscope, dynamic clinical advisory protocols, and live incident replication via Supabase PostgreSQL.
+      </p>
+      <div class="skills-grid">
+        <span class="tag">React 18</span>
+        <span class="tag">HTML5 Canvas</span>
+        <span class="tag">Supabase</span>
+        <span class="tag">PostgreSQL</span>
+      </div>
+      <div class="btn-row">
+        <a href="https://pulseaero.vercel.app" target="_blank" class="btn btn-pink">Live Console ↗</a>
+        <a href="https://github.com/sayeeda-huriya-fatima/pulseaero" target="_blank" class="btn btn-outline">Source Code</a>
+      </div>
+    </div>
+
+    <div class="section-title">Technical Toolkit ✿</div>
+    <div class="skills-grid">
+      <span class="tag">PostgreSQL</span>
+      <span class="tag">Supabase</span>
+      <span class="tag">SQLite</span>
+      <span class="tag">REST APIs</span>
+      <span class="tag">Python</span>
+      <span class="tag">React</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">Schema Design</span>
+    </div>
+
+    <footer style="text-align:center; margin-top:2.5rem; font-size:0.75rem; color:var(--muted);">
+      Crafted with care 🌸 • Hyderabad, India
+    </footer>
+  </div>
+</body>
+</html>
